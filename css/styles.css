@@ -1,0 +1,40 @@
+main {
+  width: 1200px;
+  margin: 40px auto;
+  outline: 2px solid blue;
+}
+figure {
+  width: 1018px;
+  margin: 40px auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sail', cursive;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 34px;
+  text-align: center;
+  margin-top: 20px;
+}
+h3 {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 20px;
+}
+.letter-space {
+  space: 2px;
+}
+p, figcaption {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+p {
+  line-height: 24px;
+  margin: 14px 0;
+  padding: 0 100px;
+}
+body {
+  background-color: rgb(234, 142, 153);
+}

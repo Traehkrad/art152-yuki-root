@@ -1,0 +1,67 @@
+
+/* HEADINGS */
+h1, h2, h3, h4, h6 {
+  font-family: 'Sawarabi Gothic', sans-serif;
+  text-transform: uppercase;
+}
+h1.tiny {
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: .5em;
+}
+h1 {
+  text-align: center; /* Never use for paragraphs */
+  font-size: 3em;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+h1.red {
+  color: rgb(255, 0, 0);
+}
+h4 {
+  line-height: 1.0em;
+}
+h4.red {
+  color: rgb(255, 0, 0);
+}
+h5, p {
+  font-family: 'Merriweather', serif;
+}
+li {
+  font-family: 'Roboto', sans-serif;
+}
+.byline {
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* NAV STYLES */
+nav {
+  margin: 50px 0;
+  text-align: center;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 1em;
+}
+nav li {
+  font-family: 'Montserrat', sans-serif;
+  display: inline;
+}
+nav a:link, nav a:visited {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 2px 10px;
+  margin: 2px 10px;
+  font-weight: 600;
+}
+nav a:hover {
+  border-bottom: 1px solid darkgrey;
+}
+nav a.current {
+  background-color: rgb(53, 147, 75);
+}
+body {
+  background-color: rgb(255, 255, 255);
+}

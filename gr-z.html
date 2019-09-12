@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZSlide Carosel with zurb</title>
+    <!-- BELOW NEEDED FOR ZURB -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Sail" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navstyles.css">
+    <!-- ABOVE NEEDED FOR ZURB -->
+
+    <!-- HOMEMADE STYLE SHEET NEEDED ABOVE LATER -->
+    <style>
+      .mySlides {
+        display:none;
+        width:100%;
+      }
+      img.size {
+        width:100%;
+      }
+    </style>
+    <!-- INTERNAL STYLE SHEET ABOVE -->
+
+  </head>
+  <body>
+    <main class="grid-container">
+
+      <section class="grid-x grid-padding-x">
+        <header class="large-12 cell">
+          <h1>Ghost Rider Carosel</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="lab1/index.html">lab 1</a></li>
+              <li><a href="lab2/index.html">lab 2</a></li>
+              <li><a href="lab3/index.html">lab 3</a></li>
+              <li><a href="lab4/index.html">lab 4</a></li>
+              <li><a href="project1/index.html">project 1</a></li>
+              <li><a href="project2/index.html">project 2</a></li>
+            </ul>
+          </nav>
+          <nav class="less-space">
+            <ul>
+              <li><a href="quiz.html">quiz</a></li>
+              <li><a href="media.html">media</a></li>
+              <li><a href="slides-p1.html">P1 - Slides</a></li>
+              <li><a href="slides-p2.html">P2 - Slides</a></li>
+              <li><a href="animations.html">animation</a></li>
+              <li><a href="slider.html" class="current">slider</a></li>
+            </ul>
+          </nav>
+        <div class="auto cell">
+
+        </div>
+        <div class="large-5 cell">
+          <h1>slide carosel with Zurb</h1>
+        </div>
+        <div class="auto cell">
+
+        </div>
+        </header>
+      </section>
+      <section class="grid-x">
+        <div class="large-2 cell"></div>
+        <div class="large-8 cell">
+
+          <h2 class="w3-center">Marvel - Ghost Riders</h2>
+          <section class="w3-content w3-display-container">
+
+            <img class="mySlides" src="img/gr_blaze1.jpg">
+            <img class="mySlides" src="img/gr_robbie1.jpg">
+            <img class="mySlides" src="img/gr_blaze2.jpg">
+            <img class="mySlides" src="img/gr_robbie2.jpg">
+
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </section>
+        </div>
+        <div class="large-2 cell"></div>
+      </section>
+    </main>
+
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
+
+    <!-- BELOW NEEDED FOR ZURB -->
+    <script src="zurb6/js/vendor/jquery.js"></script>
+    <script src="zurb6/js/vendor/what-input.js"></script>
+    <script src="zurb6/js/vendor/foundation.js"></script>
+    <script src="zurb6/js/app.js"></script>
+    <!-- ABOVE NEEDED FOR ZURB -->
+  </body>
+</html>

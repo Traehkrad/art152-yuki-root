@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* CSS Document */
+  body {
+    color: rgb(48,17,6);
+  }
+  main {
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(255,255,255);
+    border: 4px dotted rgb(180,180,180);
+    border-radius: 12px;
+  }
+  #first, #second, #third, #fourth, footer {
+    border-radius: 12px;
+    border: 2px dotted rgb(180,180,180);
+    margin: 4px;
+  }
+  section#first {
+    position: absolute;
+    background-color: rgb(201, 242, 205);
+    float: left;
+    width: 528px;
+    height: 280px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  section#second {
+    background-color: rgb(180, 198, 182);
+    float: right;
+    width: 350px;
+    height: 280px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  section#third {
+    background-color: rgb(244, 197, 134);
+    clear: both;
+    width: 600px;
+    margin: 0 auto;
+    padding: 18px 15px;
+  }
+  footer {
+        background-color: rgb(199, 214, 206);
+        float: left;
+        width: 952px;
+        height: 60px;
+        padding: 15px;
+        margin: 50px 8px 10px 8px;
+  }
+  h1 {
+      font-family: 'Josefin Slab', serif;
+      font-size:3.4em;
+      line-height: 1.5em;
+      margin: 0;
+      padding: 4px;
+    }
+  h2 {
+      font-family: 'Josefin Slab', serif;
+      font-size: 2.5em;
+      line-height: 1.5em;
+      margin: 0;
+      padding: 4px;
+    }
+  h3 {
+      font-family: 'Josefin Slab', serif;
+      font-size: 2em;
+      line-height: 1.5em;
+      text-align: center;
+    }
+  h4 {
+      font-family: 'Abel', sans-serif;
+      font-size: 1.9em;
+      line-height: 1.3em;
+      margin: 0;
+      padding: 4px;
+      text-align: center;
+    }
+  p {
+     font-family: 'Abel', sans-serif;
+     font-size: 1.2em;
+     line-height: 1.6em;
+    }
+  .clear {
+    clear: both;
+  }
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  font-family: 'Abel', sans-serif;
+}
+
+nav a:link, nav a:visited {
+  color: rgb(48, 17, 6);
+  text-decoration: none; /*Removes underlines from links*/
+  padding: 4px 6px;
+  margin: 2px;
+  font-size: 1em;
+}
+nav a:hover {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
